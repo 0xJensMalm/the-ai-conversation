@@ -1,0 +1,52 @@
+/* File: styles/ChatThread.module.css */
+.chatThread {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .messageContainer {
+    max-width: 70%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user {
+    align-self: flex-end;
+  }
+  
+  .agent {
+    align-self: flex-start;
+  }
+  
+  .agentName {
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+    color: #a0aec0;
+  }
+  
+  .message {
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    line-height: 1.4;
+    display: inline-block;
+  }
+  
+  .user .message {
+    background-color: #3182ce;
+    color: white;
+    border-bottom-right-radius: 0.25rem;
+  }
+  
+  .agent .message {
+    background-color: #4a5568;
+    color: white;
+    border-bottom-left-radius: 0.25rem;
+  }
+  
+  .agent:nth-child(even) .message {
+    background-color: #2d3748;
+  }
